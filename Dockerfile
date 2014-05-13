@@ -5,6 +5,7 @@ RUN apt-get -y upgrade
 RUN apt-get install -y openssh-server
 EXPOSE 8080
 EXPOSE 22
+EXPOSE 22000
 RUN mkdir /syncthing
 ADD syncthing/syncthing /syncthing/syncthing
 ADD syncthing/README.md /syncthing/README.md
